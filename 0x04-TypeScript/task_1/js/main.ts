@@ -13,5 +13,5 @@ const teacher1: Teacher = {
     fullTimeEmployee: true,
     yearsOfExperience: 8,
     location: "New york",
-    contract: false
+    any: false
 };
