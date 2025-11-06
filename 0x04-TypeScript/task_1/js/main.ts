@@ -4,7 +4,7 @@ interface Teacher {
     readonly fullTimeEmployee: boolean;
     readonly yearsOfExperience?: number;
     readonly location: string;
-    readonly contract?: boolean;
+    readonly any: boolean;
 };
 
 const teacher1: Teacher = {
