@@ -45,17 +45,17 @@ function createEmployees(salary: number | string): Director | Teacher {
     return new Director
 }
 
-function isDirector(employee: Director | Teacher): employee is Director {
-    return employee instanceof Director;
+type Subjects = "Math" | "History";
+
+function teachClass(todayClass: Subjects): string {
+    if (todayClass === "Math") {
+        return "Teaching Math";
+    } else if (todayClass === "History") {
+        return "Teachhing History";
+    }  
 }
 
-function executeWork(employee: Director |  Teacher): string {
-    if (isDirector(employee)) {
-        return employee.workDirectorTasks();
-    }
-    return employee.workTeacherTasks();
-}
-
-
-
+// Example usage:
+console.log(teachClass("Math"));     // Output: Teaching Math
+console.log(teachClass("History"));  // Output: Teaching History
 
