@@ -1,12 +1,12 @@
 interface DirectorInterface {
     workFromHome(): string;
-    getCofeeBreak(): string;
+    getCoffeeBreak(): string;
     workDirectorTasks(): string;
 }
 
 interface TeacherInterface {
     workFromHome(): string;
-    getCofeeBreak(): string;
+    getCoffeeBreak(): string;
     workTeacherTasks(): string;
 }
 
@@ -15,12 +15,12 @@ class Director implements DirectorInterface {
         return "Working from home";
     }
 
-    getCofeeBreak(): string {
-        return "Gettiing a coffee break";
+    getCoffeeBreak(): string {
+        return "Getting a coffee break";
     }
 
     workDirectorTasks(): string {
-        return "Getting to diretor tasks";
+        return "Getting to director tasks";
     }
 }
 
@@ -29,7 +29,7 @@ class Teacher implements TeacherInterface {
     return " Cannot Work from home";
     }
 
-    getCofeeBreak(): string {
+    getCoffeeBreak(): string {
         return "Cannot have a break";
     }
 
@@ -42,7 +42,7 @@ function createEmployees(salary: number | string): Director | Teacher {
     if (typeof salary === "number" && salary < 500) {
         return new Teacher();
     }
-    return new Director
+    return new Director();
 }
 
 type Subjects = "Math" | "History";
