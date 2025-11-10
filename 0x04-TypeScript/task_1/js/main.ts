@@ -28,7 +28,7 @@ class StudentClass {
     }
 
     displayName(): string {
-        return this.firstName;
+        return this.firstName,  this.lastName;
     }
 }
 
@@ -45,8 +45,9 @@ const teacher1: Teacher = {
 
 console.log(teacher1);
 
-const director1: Directors = {
-     firstName: "John",
+const director1: Director
+ = {
+    firstName: "John",
     lastName: "Doe",
     fullTimeEmployee: true,
     yearsOfExperience: 8,
